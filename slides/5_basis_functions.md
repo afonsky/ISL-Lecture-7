@@ -8,6 +8,6 @@
 * Polynomial regression: $b_j(x) := x^j$
   * It’s a sum of monomial functions
 * Piecewise constant regression: $b_j(x) = I(c_j \leq X \leq c_{j+1})$
-* **Regression splines**: 
+* **Regression splines** (subset of **B-splines**): 
 	* Bases are interactions of polynomials with indicator functions
 

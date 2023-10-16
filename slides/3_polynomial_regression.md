@@ -1,5 +1,5 @@
 ---
-layout: image-left
+layout: chapter-title
 
 # the image source
 image: /midjourney_polynomial_regression.jpg
@@ -8,11 +8,9 @@ image: /midjourney_polynomial_regression.jpg
 class: my-cool-content-on-the-right
 ---
 
+## Polynomial regression
 
-# Polynomial regression
-
-
-<span style="color:gray; font-size: 11px; float: right;">Image credit: Midjourney<br> Prompt: ‘polynomial regression in style of engraving'
+<span style="color:DimGray; font-size: 11px; position:absolute; right:20px; bottom:20px;">Image credit: Midjourney<br> prompt: ‘polynomial regression in style of engraving'
 </span>
 
 ---
@@ -28,14 +26,15 @@ class: my-cool-content-on-the-right
 <div>
 
 * E.g. Wage vs. Age:
-<br> $\mathbb{P}[\mathrm{Wage > 250 | Age}] = \frac{e^{y|x}}{1 + e^{y|x}}$
-* Logistic regression with $d=4$ with the $2\times$ estimated standard error (SE) of $\hat{f}$ at every point
+* Linear regression with $d=4$ with the $2\times$ estimated standard error (SE) of $\hat{f}$ at every point
   * Larger $d$ will lead to overfitting
-* $2\times \mathrm{SE}$ is approximately a $95\%$ CI
+  * $2\cdot\mathrm{SE}$ is approximately a $95\%$ CI
+  * $99\%$ CI would be wider
+* $\mathbb{P}[\mathrm{Wage > 250 | Age}] = \frac{e^{y|x}}{1 + e^{y|x}}$
 </div>
 <div>
   <figure>
-    <img src="/ISLRv2_figure_7.1.png" style="width: 550px !important;">
+    <img src="/ISLP_figure_7.1.png" style="width: 550px !important;">
     <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 10px; left: 350px;">Image source:
       <a href="https://hastie.su.domains/ISLP/ISLP_website.pdf#page=299">ISLP Fig. 7.1</a>
     </figcaption>
@@ -43,7 +42,6 @@ class: my-cool-content-on-the-right
 </div>
 </div>
 
-* $99\%$ confidence interval would be wider
 
 ---
 

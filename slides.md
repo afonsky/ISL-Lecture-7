@@ -90,9 +90,13 @@ src: ./slides/6_regression_splines.md
 ---
 
 ---
-src: ./slides/0_end.md
+src: ./slides/7_local_regression.md
 ---
 
-<!-- ---
-src: ./slides/all_ultracharger_slides.md
---- -->
+---
+src: ./slides/8_generalized_additive_models.md
+---
+
+---
+src: ./slides/0_end.md
+---
