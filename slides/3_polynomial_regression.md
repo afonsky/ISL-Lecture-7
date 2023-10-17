@@ -22,11 +22,11 @@ class: my-cool-content-on-the-right
 <br>$y|x = \beta_0 + \beta_1 x + \beta_2 x^2 + ... + \beta_d x^d + \epsilon$, where these $\beta_i$ are different from SLR's
 
 <br>
-<div class="grid grid-cols-[3fr,4fr] gap-1">
+<div class="grid grid-cols-[3fr,3fr] gap-1">
 <div>
 
 * E.g. Wage vs. Age:
-* Linear regression with $d=4$ with the $2\times$ estimated standard error (SE) of $\hat{f}$ at every point
+* Linear regression with $d=4$ <br> with the $2\times$ estimated standard error (SE) of $\hat{f}$ at every point
   * Larger $d$ will lead to overfitting
   * $2\cdot\mathrm{SE}$ is approximately a $95\%$ CI
   * $99\%$ CI would be wider
@@ -34,7 +34,7 @@ class: my-cool-content-on-the-right
 </div>
 <div>
   <figure>
-    <img src="/ISLP_figure_7.1.png" style="width: 550px !important;">
+    <img src="/ISLP_figure_7.1.png" style="width: 450px !important;">
     <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 10px; left: 350px;">Image source:
       <a href="https://hastie.su.domains/ISLP/ISLP_website.pdf#page=299">ISLP Fig. 7.1</a>
     </figcaption>

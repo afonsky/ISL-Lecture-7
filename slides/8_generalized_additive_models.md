@@ -36,7 +36,7 @@ $y_i = \beta_0 + \sum\limits_{j=1}^p f_j (x_{ij}) + \epsilon_i = \beta_0 + f_1 (
   * It is called an **additive** model because we calculate a separate $f_j$ for each $X_j$, and then add together all of their
 contributions
 * Ex. Wage
-  * Let $f_j$ be natural splines. Then: <br> $\mathrm{wage} = \beta_0 + f_1({\mathrm{year}}) + f_1({\mathrm{age}}) + f_1({\mathrm{education}}) + \epsilon$
+  * Let $f_1$ and $f_2$ be natural splines, and $f_3$ be step function. Then: <br> $\mathrm{wage} = \beta_0 + f_1({\mathrm{year}}) + f_2({\mathrm{age}}) + f_3({\mathrm{education}}) + \epsilon$
   * $\mathrm{year}$ and $\mathrm{age}$ are quantitative variables
   * $\mathrm{education}$ is qualitative variable with 5 levels: `<HS`, `HS`, `<Coll`, `Coll`, `>Coll`
 
@@ -87,7 +87,7 @@ contributions
 
 * Logistic regression model: $\log(\frac{p(X)}{1 - p(X)}) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + ... + \beta_p X_p$
 * Logistic regression GAM: <br>
-$\log(\frac{p(X)}{1 - p(X)}) = \beta_0 + \beta_1 f_1(X_1) + \beta_2 f_1(X_2) + ... + \beta_p f_p(X_p)$
+$\log(\frac{p(X)}{1 - p(X)}) = \beta_0 + \beta_1 f_1(X_1) + \beta_2 f_2(X_2) + ... + \beta_p f_p(X_p)$
 * Ex. Wage
   * Let $f_2$ be smoothing spline, and $f_3$ be step funtion. <br> Then Logistic regression GAM is: <br> $\log(\frac{p(X)}{1 - p(X)}) = \beta_0 + \beta_1 \times{\mathrm{year}} + f_2({\mathrm{age}}) + f_3({\mathrm{education}})$
     * Where $p(X) = \mathrm{Pr}(\mathrm{wage} > 250 | \mathrm{year}, \mathrm{age}, \mathrm{education})$

@@ -30,7 +30,6 @@ class: my-cool-content-on-the-right
 	* We need to estimate 8 coefficients, i.e. degrees of freedom (DF)
 * $K$ knots yield $K+1$ polynomials, each with $d+1$ coefficients
   * Higher DF implies higher complexity, higher variance, lower bias and risk of overfitting
-}
 
 ---
 
@@ -41,8 +40,8 @@ class: my-cool-content-on-the-right
 <br>
 
 * For a single knot $c = 50$ and $d = 3$ we have:
-<br> $\textcolor{#008000}{y_1(x \geq 50) = \beta_{01} + \beta_{11}x + \beta_{21}x^2 + \beta_{31}x^3}$
-<br> $\textcolor{#FF0000}{y_2(x < 50) = \beta_{02} + \beta_{12}x + \beta_{22}x^2 + \beta_{32}x^3}$
+<br> $\textcolor{#008000}{y_1(x < 50) = \beta_{01} + \beta_{11}x + \beta_{21}x^2 + \beta_{31}x^3}$
+<br> $\textcolor{#FF0000}{y_2(x \geq 50) = \beta_{02} + \beta_{12}x + \beta_{22}x^2 + \beta_{32}x^3}$
 * Without constraints
   * $\mathrm{DF} = (K+1)\cdot(d+1) = 8$
 
@@ -66,8 +65,8 @@ class: my-cool-content-on-the-right
 <br>
 
 * For a single knot $c = 50$ and $d = 3$ we have:
-<br> $\textcolor{#008000}{y_1(x \geq 50) = \beta_{01} + \beta_{11}x + \beta_{21}x^2 + \beta_{31}x^3}$
-<br> $\textcolor{#FF0000}{y_2(x < 50) = \beta_{02} + \beta_{12}x + \beta_{22}x^2 + \beta_{32}x^3}$
+<br> $\textcolor{#008000}{y_1(x < 50) = \beta_{01} + \beta_{11}x + \beta_{21}x^2 + \beta_{31}x^3}$
+<br> $\textcolor{#FF0000}{y_2(x \geq 50) = \beta_{02} + \beta_{12}x + \beta_{22}x^2 + \beta_{32}x^3}$
 * $1$ сonstraint:
   * $\textcolor{#008000}{y_1(x = 50)} = \textcolor{#FF0000}{y_2(x = 50)}$
     * $\mathrm{DF} = 8 - 1 = 7$
@@ -96,8 +95,8 @@ class: my-cool-content-on-the-right
 <br>
 
 * For a single knot $c = 50$ and $d = 3$ we have:
-<br> $\textcolor{#008000}{y_1(x \geq 50) = \beta_{01} + \beta_{11}x + \beta_{21}x^2 + \beta_{31}x^3}$
-<br> $\textcolor{#FF0000}{y_2(x < 50) = \beta_{02} + \beta_{12}x + \beta_{22}x^2 + \beta_{32}x^3}$
+<br> $\textcolor{#008000}{y_1(x < 50) = \beta_{01} + \beta_{11}x + \beta_{21}x^2 + \beta_{31}x^3}$
+<br> $\textcolor{#FF0000}{y_2(x \geq 50) = \beta_{02} + \beta_{12}x + \beta_{22}x^2 + \beta_{32}x^3}$
 * $3$ сonstraints:
   * $\textcolor{#008000}{y_1(x = 50)} = \textcolor{#FF0000}{y_2(x = 50)}$
   * $\textcolor{#008000}{y_1^{\prime}(x = 50)} = \textcolor{#FF0000}{y_2^{\prime}(x = 50)}$
@@ -347,7 +346,8 @@ class: my-cool-content-on-the-right
 
 $\mathrm{DF}_\lambda = \mathrm{trace} S_\lambda = \sum\limits_i^N \{S_\lambda\}_{ii}$
   * where $S_\lambda$ is $n \times n$ matrix,
-  <br> which solves $\hat{g}_\lambda = S_\lambda y$, where $\hat{g}_\lambda$ is an $n$-vector
+  <br> which solves $\hat{g}_\lambda = S_\lambda y$,
+  <br> where $\hat{g}_\lambda$ is an $n$-vector
     * More details in <a href="https://hastie.su.domains/ElemStatLearn/printings/ESLII_print12.pdf#page=173">ESL book, p.154</a>
 </div>
 
